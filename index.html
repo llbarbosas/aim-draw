@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>aim-draw</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <styles>
+    @font-face { font-family: "JetBrains Mono"; src:
+    url("./assets/fonts/JetBrainsMono-Regular.eot")
+    format("embedded-opentype"),
+    url("./assets/fonts/JetBrainsMono-Regular.woff2")
+    format("woff2"),
+    url("./assets/fonts/JetBrainsMono-Regular.woff")
+    format("woff"),
+    url("./assets/fonts/JetBrainsMono-Regular.ttf")
+    format("truetype"); font-weight: normal; font-style: normal; } * {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    font-family: "JetBrains Mono"; } html { box-sizing: border-box; font-size:
+    16px; } *, *:before, *:after { box-sizing: inherit; } body, h1, h2, h3,
+    h4, h5, h6, p, ol, ul { margin: 0; padding: 0; font-weight: normal; } ol,
+    ul { list-style: none; } img { max-width: 100%; height: auto; } body {
+    background-color: #303030; } #bottom-bars { position: fixed; bottom: 0;
+    width: 100%; } #status-bar, #command-bar { display: flex; justify-content:
+    space-between; } #command-bar { background-color: #1a1a1a; color: #c8c8c8;
+    padding: 10px 15px; } #status-bar { color: #8d8d8d; padding: 5px 15px; }
+  </styles>
+</head>
+
+<body>
+  <div id="bottom-bars">
+    <div id="status-bar">
+      <div>transform</div>
+      <div>20% 800l 800h</div>
+    </div>
+    <div id="command-bar">
+      <div>:wq</div>
+      <div style="color: #4e4e4e;">write and quit</div>
+    </div>
+  </div>
+
+  <script src="./dist/renderer.js"></script>
+</body>
+
+</html>

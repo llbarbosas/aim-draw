@@ -1,0 +1,16 @@
+{
+  "name": "aim-draw",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "dev": "npm run build && electron ./dist/main.js"
+  },
+  "author": "llbarbosas",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "typescript": "^3.9.5"
+  }
+}
