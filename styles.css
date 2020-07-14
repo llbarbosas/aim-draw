@@ -84,7 +84,8 @@ body {
   font-size: 16px;
 }
 #command-input {
-  flex: 7;
+  width: 0ch;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
@@ -96,8 +97,12 @@ body {
 }
 
 #command-info {
-  color: #4e4e4e;
   flex: 2;
   text-align: end;
   white-space: nowrap;
+}
+
+#command-info,
+#command-args {
+  color: #4e4e4e;
 }
