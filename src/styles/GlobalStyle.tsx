@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components'
+
+export default createGlobalStyle`
+/*
 @font-face {
   font-family: "JetBrains Mono";
   src: url("./assets/fonts/JetBrainsMono-Regular.eot")
@@ -8,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+*/
 * {
   -webkit-font-feature-settings: "liga" on, "calt" on;
   -webkit-font-smoothing: antialiased;
@@ -52,57 +57,8 @@ body {
   width: 100%;
   height: 100%;
 }
-#status-bar,
-#command-bar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#command-bar {
-  background-color: #1a1a1a;
-  padding: 10px 15px;
-  display: none;
-}
-#status-bar {
-  color: #8d8d8d;
-  padding: 5px 15px;
-}
-#view {
-  width: 100%;
+#root {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
+  width: 100%;
 }
-#canvas {
-  flex: 1;
-}
-#two-dots,
-#command-input {
-  color: #c8c8c8;
-  font-size: 16px;
-}
-#command-input {
-  width: 0ch;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
-#command-input:focus {
-  outline: none;
-}
-#command-input::before {
-  background-color: red;
-}
-
-#command-info {
-  flex: 2;
-  text-align: end;
-  white-space: nowrap;
-}
-
-#command-info,
-#command-args {
-  color: #4e4e4e;
-}
+`
